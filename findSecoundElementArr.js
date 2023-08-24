@@ -5,7 +5,7 @@ let firstSolution = (arr)=>{
 }
 
 /*******2Nd Solution.****-->Create variable and store max value in it*/
-let secSolution = (arr) =>{
+let secSolution = (arr) => {
     let max = arr[0];
     let sec = arr[0];
     for (let i = 0; i < arr.length; i++) {
@@ -13,16 +13,14 @@ let secSolution = (arr) =>{
         max = arr[i];
         sec = max;
       }
+      
       if (max <= sec ) {
            sec = arr[i];
       }
-
     }
     return sec;
-  
 }
-
-let arr = [10,22,99,81,77]
+let arr = [81,10,22,99,77]
 console.log("result--->",firstSolution(arr),"Time Complexty O(N log N) Space Complexty O(1)");
 console.log("result--->",secSolution(arr),"Time Complexty O(N) Space Complexty O(1)");
 
